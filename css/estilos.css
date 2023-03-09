@@ -17,7 +17,7 @@ a {
 .principal {
     width: 1024px;
     margin: 0 auto;
-    background-color: rgb(54, 49, 110);
+    background-image: linear-gradient(to bottom, rgb(54, 49, 110), rgb(18, 16, 38));
 }
 
 /** Header Início **/
@@ -60,7 +60,6 @@ a {
     background-color: rgb(42, 39, 39);
     text-decoration: underline;
     transition: all .4s ease-in-out;
-
 }
 
 .nav-link {
@@ -92,15 +91,18 @@ a {
 .subtitle {
     color: white;
     text-align: center;
-    margin: 20px auto;
+    margin: 20px auto 60px;
     font-size: 14px;
 }
 
 .img-inicio {
-    width: 200px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
     position: absolute;
-    left: 2px;
-    top: 30px;
+    left: 40px;
+    top: 80px;
+    border: 1px solid red;
 }
 
 .paragrafo {
