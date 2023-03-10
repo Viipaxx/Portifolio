@@ -57,7 +57,7 @@ a {
 .nav-li:hover {
     border: 1px solid black;
     color: black;
-    background-color: rgb(42, 39, 39);
+    background-color: rgba(255, 255, 255, 0.338);
     text-decoration: underline;
     transition: all .4s ease-in-out;
 }
@@ -140,8 +140,7 @@ a {
 
 .sumir {
     opacity: 0%;
-    
-    transition: all .5s ease;
+    transition: all 1s ease-in-out;
 }
 
 .projeto-pjt:hover .sumir{
