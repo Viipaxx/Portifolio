@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+html {
+    font-family: sans-serif;
+    background-image: linear-gradient(to bottom, #8956f1, #cb80ff);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oxygen", Arial;
+}
+
+/** generics **/
+
+.clearfix::after, .row::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.title {
+    text-align: left;
+    font-size: 1.6em;
+    color: #241b35;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+/*? header ?*/
+
+.top-header {
+    text-align: center;
+}
+
+.top-nav {
+    /* background-color: #8956f1; */
+    text-align: center;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    padding: 1em 0;
+    margin: 0;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.top-nav a:hover {
+    background-color: #cb80ff;
+}
+
+/*? top content ?*/
+
+.top-content {
+    padding: 1em;
+}
+
+.top-content-name {
+    text-align: center;
+    color: #020102;
+}
+
+.img-content {
+    text-align: center;
+    height: 200px;
+}
+
+.img-content img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.img-content p {
+    line-height: 1.5;
+    text-align: left;  
+    color: #241b35;  
+}
+
+/*? main-content ?*/
+
+.main-content {
+    padding: 1em;
+}
+
+.main-content p {
+    line-height: 1.5;
+    text-align: left;  
+    color: #241b35; 
+}
+
+.main-content h4 {
+    font-size: 1.3em;
+    color: #241b35;
+}
+
+    /** skills **/
+
+.skill-article {
+    display: inline-block;
+    height: 150px;
+    margin-left: 2%;
+}
+
+.skill-article img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.skill-article p {
+    text-align: center;
+    line-height: 0;
+}
+
+/*? project content ?*/
+
+.project-content {
+    padding: 1em;
+}
+
+.project-content p {
+    text-align: center;
+}
+
+.project-content a {
+    text-decoration: none;
+    font-family: inherit;
+}
+
+    /** project img**/
+
+.col-1-2 {
+    height: 150px;
+    display: inline-block;
+    width: 47%;
+    margin: 1% 0 1% 2%;
+    text-align: center;
+    /* margin: 1em 0; */
+}
+
+.col-1-2 img {
+    max-width: 100%;
+    height: 90%;
+}
+
+.col-1-2 p {
+    margin: 0;
+    color: #241b35;
+}
+
+.project-content h4 {
+    font-size: 1.3em;
+    color: #241b35;
+}
+
+.ul-link {
+    list-style: none;
+}
+
+.li-link {
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.li-link a {
+    color: #241b35;
+}
+
+.li-link a:hover {
+    color: #8956f1;
+}
+
+.icon {
+    font-size: 2em;
+}
+
+/*? contato ?*/
+
+.contato-content {
+    padding: 1em;
+}
+
+.li-contato {
+    /* display: block; */
+    list-style: none;
+    position: relative;
+}
+
+.li-contato a {
+    color: #241b35;
+    text-decoration: none;
+}
+
+.li-contato a:hover {
+    color: #8956f1;
+}
+
+.li-contato .icon {
+    margin: 1% 1% 1% 0;
+    transform: translateY(5px);
+}
+
+/*? footer ?*/
+
+.footer {
+    padding: 1em;
+    color: #241b35;
+    height: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.footer i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*! media queries !*/
+
+@media screen and (min-width: 48.75em) {
+
+    .top-nav {
+        background-color: transparent;
+    }
+
+    .top-nav a{
+        text-shadow: 1px 1px 1px #020102;
+    }
+
+    .top-nav a:hover {
+        background-color: #ca80ff67;
+    }
+
+    .img-bg{
+        background: url(../img/bg_topo_1600x1374.jpg);
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;
+        max-height: 100%;
+        color: white;
+    }
+
+    .top-content-name, .top-content .title {
+        text-shadow: 1px 1px 1px black;
+        color: white;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .top-nav ul {
+        text-align: right;
+        margin-right: 1%;
+    }
+
+    .top-nav li {
+        display: inline-block;
+    }
+
+    .img-content img {
+        float: left;
+    }
+
+    .top-content p {
+        width: 70%;
+        transform: translate(240px, -120px);
+    }
+
+    .col-1-2 {
+        width: 20%;
+        margin-left: 4%;
+        box-sizing: border-box;
+    }
+
+    .sumir {
+        opacity: 0;
+        transition: all 1s ease-in-out;
+    }
+
+    .project-row:hover .sumir {
+        opacity: 100%;
+    }
+
+}
