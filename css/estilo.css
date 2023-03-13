@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
     list-style-type: none;
     padding: 1em 0;
     margin: 0;
+    border-bottom: 1px solid white;
 }
 
 .top-nav a {
@@ -225,8 +226,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 48.75em) {
 
-    .top-nav {
-        background-color: transparent;
+    .top-nav ul {
+        border: none;
     }
 
     .top-nav a{
